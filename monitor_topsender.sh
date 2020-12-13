@@ -32,7 +32,7 @@ acct=`echo $email_acct |awk -F"[<>]" '{print $2}'`
 #su - zimbra -c "zmprov ma $acct zimbraAccountStatus closed"
 echo " " >> /tmp/high_vol_list
 echo -e "#########################################################################################\n" >> /tmp/high_vol_list
-echo "Note:  The email accounts might have been compromised and the status has been changed to "closed".\n       "Kindly change the password to strong one and Change the account status to "Active".">> /tmp/high_vol_list
+echo "Note:  The email accounts might have been compromised and the status has been changed to "closed".\n       Kindly change the password to strong one and Change the account status to "Active".">> /tmp/high_vol_list
 echo "#########################################################################################" >> /tmp/high_vol_list
 #cat /tmp/high_vol_list |tail -15
 
